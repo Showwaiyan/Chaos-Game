@@ -1,10 +1,13 @@
+# Module import start
 import pygame
+# Module import end
 
 class Point:
+    # Points that are represent for the random three point on the screen
 
-    point = (0,0)
-    size = (0,0)
-    color = (0,0,0)
+    point = (0,0) # coordinate
+    size = (0,0) # icon size
+    color = (0,0,0) # RGB color
 
 
     def __init__(self, size, point, color):
@@ -21,5 +24,5 @@ class Point:
     def get_color(self):
         return self.color
 
-    def mid_point(self,point):
+    def mid_point(self,point): # The mid point formula
         return ((self.point[0]+point[0])/2, (self.point[1]+point[1])/2)
